@@ -36,7 +36,7 @@ pipeline {
             steps{
                 unstash 'app'
                 sh 'docker build . -t img'
-                sh 'docker run -t img -p 8010:8010'
+                //sh 'docker run -t img -p 8010:8010'
             }
         }
     }

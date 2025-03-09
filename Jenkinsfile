@@ -36,6 +36,7 @@ pipeline {
             steps{
                 unstash 'app'
                 sh 'docker build . -t img'
+                echo 'End deploy'
                 //sh 'docker run -t img -p 8010:8010'
             }
         }

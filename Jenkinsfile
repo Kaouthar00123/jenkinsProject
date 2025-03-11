@@ -37,7 +37,7 @@ pipeline {
             agent any 
             steps{
                 unstash 'app'
-                sh 'docker build . -t img'
+                sh 'docker build . -t img2'
                 echo 'End deploy'
                 //sh 'docker run -t img -p 8010:8010'
             }

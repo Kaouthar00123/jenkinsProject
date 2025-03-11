@@ -1,9 +1,9 @@
 pipeline {
 
     agent none
-    /*triggers { 
+    triggers { 
         githubPush() 
-    }*/
+    }
     stages {
         stage('Build') {
             agent {

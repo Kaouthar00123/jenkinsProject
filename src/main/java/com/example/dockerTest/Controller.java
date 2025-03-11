@@ -8,7 +8,7 @@ public class Controller {
     @GetMapping("/test")
     String getTest()
     {
-        return "Hello from test controller in this java spring app + add little change to test github email notifications";
+        return "Hello from test controller in this java spring app +++";
     }
 }
 

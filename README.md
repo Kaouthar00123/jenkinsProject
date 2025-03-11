@@ -25,6 +25,6 @@ Ce projet est une application Java simple, développée à l'aide du framework S
 
 ## Utilisation
 
-1. Clonez ce dépôt sur votre machine locale :
+- Clonez ce dépôt sur votre machine locale :
    ```bash
    git clone https://github.com/votre-utilisateur/votre-projet.git

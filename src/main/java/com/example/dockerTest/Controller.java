@@ -8,7 +8,7 @@ public class Controller {
     @GetMapping("/test")
     String getTest()
     {
-        return "Hello from test controller in this java spring app ++ try webhook change";
+        return "Hello from test controller in this java spring app ++ try webhook";
     }
 }
 

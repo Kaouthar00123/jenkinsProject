@@ -1,0 +1,38 @@
+variables:
+  IMAGE_NAME: testsimplecigitlab
+  IMAGE_TAG: lts
+
+stages:
+  - build
+  - test
+  - deploy
+
+build_job:
+  stage: build
+  image: maven:3.9.9-eclipse-temurin-23
+  script:
+    - mvn clean package spring-boot:repackage -DskipTests=true
+  artifacts:
+    paths:
+      - target/
+
+
+test:
+  stage: test
+  image: maven:3.9.9-eclipse-temurin-23
+  script:
+    - mvn test
+  dependencies: []
+
+
+deploy:
+  stage: deploy
+  image: docker:20.10.16
+  services:
+    - docker:20.10.16-dind
+  script:
+    - ls
+    - docker build . -t $IMAGE_NAME:$IMAGE_TAG
+    - docker login -u $GITLAB_DOCKER_USER -p $GITLAB_DOCKER_PASS
+    - docker image tag $IMAGE_NAME:$IMAGE_TAG kaoutharesh/firstdockerhub:version3
+    - docker push kaoutharesh/firstdockerhub:version3

@@ -1,30 +1,30 @@
-# Projet Spring Boot avec CI/CD
+# Spring Boot Project with CI/CD using Jenkins
 
-Ce projet est une application Java simple, développée à l'aide du framework Spring Boot. L'objectif principal de ce projet est de tester et de mettre en œuvre les concepts de CI/CD (Intégration Continue et Déploiement Continu).
+This project is a simple Java application developed using the Spring Boot framework. The main objective of this project is to test and implement CI/CD (Continuous Integration and Continuous Deployment) concepts.
 
-## Fonctionnalités
+## Features
 
-- **Intégration Continue (CI)** : Le projet est configuré pour être intégré et testé sur Jenkins. Le fichier `Jenkinsfile` contient un script qui automatise le processus CI/CD pour cette application.
-- **Déploiement Continu (CD)** : Le processus CI/CD comprend les étapes de base suivantes :
-  - **Build** : Compilation du code source.
-  - **Test** : Exécution des tests automatisés pour vérifier la qualité du code.
-  - **Déploiement** : Déploiement de l'application sur un environnement cible.
+- **Continuous Integration (CI)**: The project is configured to be integrated and tested on Jenkins. The `Jenkinsfile` contains a script that automates the CI/CD process for this application.
+- **Continuous Deployment (CD)**: The CI/CD process includes the following basic steps:
+  - **Build**: Compilation of the source code.
+  - **Test**: Execution of automated tests to verify code quality.
+  - **Deployment**: Deployment of the application to a target environment.
 
-## Prérequis
+## Prerequisites
 
-- Java JDK 8 ou supérieur
+- Java JDK 8 or higher
 - Maven
 - Jenkins
-- Un environnement de déploiement (par exemple, un serveur Tomcat, Docker, etc.)
+- A deployment environment (e.g., Tomcat server, Docker, etc.)
 
 ## Configuration
 
-1. **Jenkins** : Assurez-vous que Jenkins est installé et configuré sur votre machine ou serveur.
-2. **Jenkinsfile** : Le fichier `Jenkinsfile` doit être placé à la racine du projet. Il contient les étapes de build, test et déploiement.
-3. **Dépendances** : Les dépendances du projet sont gérées par Maven. Assurez-vous que le fichier `pom.xml` est correctement configuré.
+1. **Jenkins**: Ensure Jenkins is installed and configured on your machine or server.
+2. **Jenkinsfile**: The `Jenkinsfile` must be placed at the root of the project. It contains the build, test, and deployment steps.
+3. **Dependencies**: Project dependencies are managed by Maven. Ensure the `pom.xml` file is properly configured.
 
-## Utilisation
+## Usage
 
-- Clonez ce dépôt sur votre machine locale :
+- Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-projet.git
+   git clone https://github.com/your-username/your-project.git
